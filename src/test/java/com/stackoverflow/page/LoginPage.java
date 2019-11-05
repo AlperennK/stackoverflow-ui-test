@@ -26,7 +26,7 @@ public class LoginPage extends PageBase{
 
     public void login(){
         emailbox.sendKeys("alperenkoksel@yandex.com");
-        passbox.sendKeys("Ayben2008!");
+        passbox.sendKeys("xxx");
         loginbut.click();
     }
     public String missingPass(){
