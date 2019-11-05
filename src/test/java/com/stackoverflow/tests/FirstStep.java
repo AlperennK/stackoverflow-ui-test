@@ -6,6 +6,7 @@ import com.stackoverflow.page.TopQuestions;
 import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import static org.junit.Assert.*;
 
 public class FirstStep {
     WebDriver driver = MyDriver.getDriver();
@@ -31,7 +32,6 @@ public class FirstStep {
     @After
     public void tearDown(){
         driver.close();
-        driver.quit();
 
     }
 }

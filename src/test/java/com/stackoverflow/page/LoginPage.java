@@ -35,5 +35,10 @@ public class LoginPage extends PageBase{
         return wrongpass.getText();
 
     }
+    public String missingEmail(){
+        passbox.sendKeys("Ayben2008!");
+        loginbut.click();
+        return wrongpass.getText();
+    }
 
 }
