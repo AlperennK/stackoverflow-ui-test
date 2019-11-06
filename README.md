@@ -1,9 +1,18 @@
-To run tests change email and pass on src/page/LoginPage.java
 
 To run:
 mvn clean test 
 
+
+mozilla firefox tests under mozilla-test branch
+
+
+
 To be implemented:
-On config.yml
-Implement attributes: baseURL, browser type, SeleniumGridURL
+-config.yml
+
+-Implement attributes: baseURL, browser type, SeleniumGridURL
+
+-Add SeleniumGrid
+
+https://github.com/SeleniumHQ/docker-selenium
 

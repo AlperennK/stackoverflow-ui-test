@@ -15,9 +15,12 @@ public class LoginPage extends PageBase{
 
     @FindBy(id = "submit-button")
     private WebElement loginbut;
-
+//
     @FindBy(css= "[class='grid--cell s-input-message js-error-message']")
     private WebElement wrongpass;
+//
+//    @FindBy(id ="notify-container")
+//    private WebElement wrongpass;
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -25,18 +28,19 @@ public class LoginPage extends PageBase{
 
 
     public void login(){
-        emailbox.sendKeys("alperenkoksel@yandex.com");
-        passbox.sendKeys("xxx");
+        emailbox.sendKeys("testautomationframework@yandex.com");
+        passbox.sendKeys("Tester123ewq!");
         loginbut.click();
     }
     public String missingPass(){
-        emailbox.sendKeys("alperenkoksel@yandex.com");
+        emailbox.sendKeys("testautomationframework@yandex.com");
         loginbut.click();
-        return wrongpass.getText();
+        String missingPassResponse= wrongpass.getText();
+        return missingPassResponse;
 
     }
     public String missingEmail(){
-        passbox.sendKeys("Ayben2008!");
+        passbox.sendKeys("Tester123ewq");
         loginbut.click();
         return wrongpass.getText();
     }

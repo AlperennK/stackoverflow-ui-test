@@ -4,6 +4,7 @@ import com.stackoverflow.driver.MyDriver;
 import com.stackoverflow.page.HomePage;
 import com.stackoverflow.page.LoginPage;
 import com.stackoverflow.page.TopQuestions;
+import org.apache.commons.logging.Log;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -24,11 +25,9 @@ public class SecondStep {
     @Test
     public void passwordMissing(){
         homePage.getLoginPage();
-        loginPage.missingPass();
-        Assert.assertEquals("Password cannot be empty.", loginPage.missingPass());
-
+        String response= loginPage.missingPass();
+        Assert.assertEquals("Password cannot be empty.", response);
     }
-
 
     @After
     public void tearDown(){
