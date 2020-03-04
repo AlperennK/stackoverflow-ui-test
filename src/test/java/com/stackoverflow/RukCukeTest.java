@@ -1,5 +1,4 @@
 package com.stackoverflow;
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
@@ -15,3 +14,4 @@ import org.junit.runner.RunWith;
 )
 public class RunCukeTest {
 }
+

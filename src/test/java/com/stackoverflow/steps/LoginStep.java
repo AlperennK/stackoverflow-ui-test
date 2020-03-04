@@ -1,6 +1,4 @@
 package com.stackoverflow.steps;
-
-import ch.qos.logback.core.net.SyslogOutputStream;
 import com.stackoverflow.driver.MyDriver;
 import com.stackoverflow.page.HomePage;
 import com.stackoverflow.page.LoginPage;
@@ -11,7 +9,8 @@ import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
-public class BDDFirst {
+
+public class LoginStep {
     WebDriver driver = MyDriver.getDriver();
     HomePage homePage;
     LoginPage loginPage;
@@ -30,9 +29,9 @@ public class BDDFirst {
         loginPage.login();
 
     }
+
     @Then("^User will have Top Questions page displayed$")
     public void we_will_have_account_page(){
         Assert.assertEquals("Top Questions", topquestions.getPageTitle());
     }
-
 }
