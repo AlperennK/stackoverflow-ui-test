@@ -1,0 +1,69 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# new feature"
+      },
+      {
+        "line": 2,
+        "value": "# Tags: optional"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 6,
+        "name": "The correct username/password combination should be able to login",
+        "description": "",
+        "id": "test-the-login-functionality-of-the-website;the-correct-username/password-combination-should-be-able-to-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4374716200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is in login page",
+            "match": {
+              "location": "BDDFirst.user_is_in_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 733929200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters correct username and password",
+            "match": {
+              "location": "BDDFirst.user_enters_correct_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45631800,
+              "error_message": "org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression [//*[@id\u003d\"mainbar\"]/div[1]/h1] because of the following error:\nSyntaxError: Failed to execute \u0027evaluate\u0027 on \u0027Document\u0027: The string \u0027[//*[@id\u003d\"mainbar\"]/div[1]/h1]\u0027 is not a valid XPath expression.\n  (Session info: chrome\u003d80.0.3987.122)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027KOKSEL-A-M\u0027, ip: \u002710.0.75.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\\Users\\ALPERE~1.KOK\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51816}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 2e7038eb0f8e7991fa21f91bd4b07947\n*** Element info: {Using\u003dxpath, value\u003d[//*[@id\u003d\"mainbar\"]/div[1]/h1]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat com.github.webdriverextensions.internal.WebDriverExtensionElementLocator.findElement(WebDriverExtensionElementLocator.java:37)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy24.getText(Unknown Source)\r\n\tat com.stackoverflow.page.TopQuestions.getPageTitle(TopQuestions.java:18)\r\n\tat com.stackoverflow.steps.BDDFirst.we_will_have_account_page(BDDFirst.java:35)\r\n\tat ✽.Then User will have Top Questions page displayed(features/Login.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "User will have Top Questions page displayed",
+            "match": {
+              "location": "BDDFirst.we_will_have_account_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test the login functionality of the website",
+    "description": "",
+    "id": "test-the-login-functionality-of-the-website",
+    "keyword": "Feature",
+    "uri": "features/Login.feature"
+  }
+]

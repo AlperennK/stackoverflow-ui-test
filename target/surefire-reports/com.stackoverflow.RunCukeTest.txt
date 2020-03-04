@@ -1,0 +1,70 @@
+-------------------------------------------------------------------------------
+Test set: com.stackoverflow.RunCukeTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 5.755 sec <<< FAILURE!
+Then User will have Top Questions page displayed(Scenario: The correct username/password combination should be able to login)  Time elapsed: 0.006 sec  <<< ERROR!
+org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression [//*[@id="mainbar"]/div[1]/h1] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '[//*[@id="mainbar"]/div[1]/h1]' is not a valid XPath expression.
+  (Session info: chrome=80.0.3987.122)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'KOKSEL-A-M', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ALPERE~1.KOK\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51816}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2e7038eb0f8e7991fa21f91bd4b07947
+*** Element info: {Using=xpath, value=[//*[@id="mainbar"]/div[1]/h1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.github.webdriverextensions.internal.WebDriverExtensionElementLocator.findElement(WebDriverExtensionElementLocator.java:37)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at com.stackoverflow.page.TopQuestions.getPageTitle(TopQuestions.java:18)
+	at com.stackoverflow.steps.BDDFirst.we_will_have_account_page(BDDFirst.java:35)
+	at ?.Then User will have Top Questions page displayed(features/Login.feature:9)
+
+Scenario: The correct username/password combination should be able to login  Time elapsed: 0.008 sec  <<< ERROR!
+org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression [//*[@id="mainbar"]/div[1]/h1] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '[//*[@id="mainbar"]/div[1]/h1]' is not a valid XPath expression.
+  (Session info: chrome=80.0.3987.122)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'KOKSEL-A-M', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ALPERE~1.KOK\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51816}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2e7038eb0f8e7991fa21f91bd4b07947
+*** Element info: {Using=xpath, value=[//*[@id="mainbar"]/div[1]/h1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.github.webdriverextensions.internal.WebDriverExtensionElementLocator.findElement(WebDriverExtensionElementLocator.java:37)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at com.stackoverflow.page.TopQuestions.getPageTitle(TopQuestions.java:18)
+	at com.stackoverflow.steps.BDDFirst.we_will_have_account_page(BDDFirst.java:35)
+	at ?.Then User will have Top Questions page displayed(features/Login.feature:9)
+

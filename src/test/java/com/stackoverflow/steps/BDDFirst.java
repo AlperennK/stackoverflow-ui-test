@@ -22,10 +22,9 @@ public class BDDFirst {
         homePage=new HomePage(driver);
         loginPage=new LoginPage(driver);
         topquestions=new TopQuestions(driver);
-        System.out.println("User is in login page ");
     }
 
-    @When("^When user enters correct username and password$")
+    @When("^User enters correct username and password$")
     public void user_enters_correct_username_and_password(){
         homePage.getLoginPage();
         loginPage.login();
@@ -34,7 +33,6 @@ public class BDDFirst {
     @Then("^User will have Top Questions page displayed$")
     public void we_will_have_account_page(){
         Assert.assertEquals("Top Questions", topquestions.getPageTitle());
-        System.out.println("We will have account page");
     }
 
 }
