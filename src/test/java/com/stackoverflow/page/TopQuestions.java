@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class TopQuestions extends PageBase {
 
-    @FindBy(css= "[class='grid--cell fl1 fs-headline1']")
+    @FindBy(xpath= "[//*[@id=\"mainbar\"]/div[1]/h1]")
     private WebElement topQuestions;
 
     public TopQuestions(WebDriver driver) {

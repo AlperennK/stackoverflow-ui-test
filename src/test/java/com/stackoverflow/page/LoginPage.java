@@ -28,8 +28,8 @@ public class LoginPage extends PageBase{
 
 
     public void login(){
-        emailbox.sendKeys("testautomationframework@yandex.com");
-        passbox.sendKeys("Tester123ewq!");
+        emailbox.sendKeys("alperenkoksel@yandex.com");
+        passbox.sendKeys("Ayben2008!");
         loginbut.click();
     }
     public String missingPass(){

@@ -14,7 +14,7 @@ public class MyDriver {
     private MyDriver(){
     }
     public static WebDriver getDriver(){
-        System.setProperty("webdriver.chrome.driver", "src/test/resource/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get(AppSettings.Instance.BaseUrl);
         return driver;
