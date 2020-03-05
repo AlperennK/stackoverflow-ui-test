@@ -32,6 +32,25 @@ public class LoginStep {
 
     @Then("^User will have Top Questions page displayed$")
     public void we_will_have_account_page(){
-        Assert.assertEquals("Top Questions", topquestions.getPageTitle());
+        Assert.assertEquals("Stack Overflow - Where Developers Learn, Share, & Build Careers", driver.getTitle());
     }
+    @Given("^User is on home pagee$")
+    public void user_is_on_homepage(){
+        homePage=new HomePage(driver);
+        loginPage=new LoginPage(driver);
+        topquestions=new TopQuestions(driver);
+    }
+
+    @When("^User enters wrong username and password$")
+    public void user_enters_wrong_username_and_password(){
+        homePage.getLoginPage();
+
+    }
+    @Then("^Wrong username password combination error should displayed$")
+    public void user_receieve_login_error_message(){
+        String response= loginPage.missingPass();
+        Assert.assertEquals("Password cannot be empty.", response);
+    }
+
+
 }

@@ -4,8 +4,14 @@ import com.stackoverflow.driver.MyDriver;
 import com.stackoverflow.page.LoginPage;
 import com.stackoverflow.page.TopQuestions;
 import org.junit.*;
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runners.JUnit4;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
+import java.awt.event.TextListener;
+
 import static org.junit.Assert.*;
 
 public class FirstStep {
@@ -22,17 +28,12 @@ public class FirstStep {
     }
 
 
-    @Test
-    public void pageTitle(){
-        homePage.getLoginPage();
-        loginPage.login();
-        Assert.assertEquals("Top Questions", topquestions.getPageTitle());
 
-    }
     @After
     public void tearDown(){
         driver.close();
         driver.quit();
 
     }
+
 }

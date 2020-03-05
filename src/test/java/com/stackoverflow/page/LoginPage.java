@@ -28,12 +28,12 @@ public class LoginPage extends PageBase{
 
 
     public void login(){
-        emailbox.sendKeys("alperenkoksel@yandex.com");
-        passbox.sendKeys("Ayben2008!");
+        emailbox.sendKeys("testautomationframeworktest@gmail.com\n");
+        passbox.sendKeys("Test123qwe!");
         loginbut.click();
     }
     public String missingPass(){
-        emailbox.sendKeys("testautomationframework@yandex.com");
+        emailbox.sendKeys("testautomationframeworktest@gmail.com");
         loginbut.click();
         String missingPassResponse= wrongpass.getText();
         return missingPassResponse;
